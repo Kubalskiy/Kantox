@@ -1,0 +1,289 @@
+.wrapper{
+  margin: 20px;
+}
+
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+
+}
+
+.styled-hr {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  content: "";
+  height: 2px;
+  background: #02a8e0;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 30px auto;
+
+}
+
+.tabMenu__ul {
+  display: flex;
+  justify-content: left;
+  align-content: stretch;
+  width: 100%;
+
+}
+
+.tabMenu__li {
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+
+  font-size: 1.5em;
+
+}
+
+.tabMenu__li-active:after {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 0.5rem;
+  background: #02a8e0;
+  padding: 1px;
+
+}
+
+.tabMenu__a {
+  color: #02a8e0;
+
+}
+
+.tabMenu__a-active {
+  color: #000;
+
+}
+
+ /*Table base styles*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  width: 100%;
+}
+
+
+ /*Table header base styles*/
+ th {
+  text-align: left;
+  border: none;
+  padding: 0.2em;
+}
+
+.mainBlock {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 10px auto;
+}
+
+.mainBlock__hr {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 20px 0;
+  bottom: 0;
+  background: #02a8e0;
+  width: 100%;
+}
+
+/*Table cell base styles*/
+.mainBlock__td {
+  border: none;
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.4em;
+  color: #000;
+}
+
+.mainBlock__td-row-1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.mainBlock__td-col-1 {
+  width: 70%;
+  text-align: left;
+}
+
+.mainBlock__td-col-2 {
+  width: 15%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.mainBlock__td-col-3 {
+  width: 15%;
+  text-align: left;
+  padding-left: 5px;
+
+}
+
+.mainBlock__td-fontStyle-1 {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+.mainBlock__td-fontStyle-2 {
+  font-weight: bold;
+ }
+
+.mainBlock__td-row-1.mainBlock__td-col-3,
+.mainBlock__td-row-2.mainBlock__td-col-3 {
+  color: #b3b3b3;
+
+}
+
+.mainBlock__td-highlight-take {
+  background-color: #e6f7e6;
+
+}
+
+.mainBlock__td-boxsize-1 {
+  width: 120px;
+}
+
+.mainBlock__td-boxsize-2 {
+  width: 90px;
+}
+
+.mainBlock__td-highlight-grey {
+  background: #ffe6e6;
+
+}
+.mainBlock__buttonMain {
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 0;
+  text-align: center;
+  transition: background 0.2s ease;
+  font-style: normal;
+  font-size: 1.2rem;
+  border: none;
+  margin: 0 10px;
+
+}
+
+.mainBlock__buttonMain-btn-no {
+  background: none;
+  color: #000;
+
+}
+
+.mainBlock__buttonMain-btn-yes {
+  color: #ffffff;
+  background: #02a8e0;
+
+}
+
+.mainBlock__inner__spaces {
+
+  margin-bottom: 50px;
+}
+
+.mainBlock__inner__order {
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  margin: 0 30px;
+}
+
+/*Dropdown*/
+.mainBlock__select {
+
+  padding: 10px;
+  margin: 6px;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  background: #e6e6e6;
+  color: #000;
+  max-width: 312px;
+  width: 100%;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .mainBlock__select {
+    padding-right: 18px
+  }
+}
+
+.mainBlock__selectLabel {
+  position: relative;
+  display: inline-block;
+}
+
+.mainBlock__selectLabel:after {
+  content: '▼';
+  font: 20px "Consolas", monospace;
+  color: #fff;
+  right: -1px;
+  top: 2px;
+  padding: 9px 10px 6px 0px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mainBlock__selectLabel:before {
+  margin-right: 0px;
+  content: '';
+  right: -5px;
+  top: 6px;
+  width: 20px;
+  height: 17px;
+  background: #02a8e0;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  padding: 10px;
+
+}
+
+.mainBlock__td__percents {
+  color: #b3b3b3;
+}
+.mainBlock__inner {
+  width: 50%;
+}
+
+.mainBlock__inner-half {
+  padding-left: 50px;
+}
+
+.mainBlock__buttons {
+
+  margin: 39px 0 0 10px;
+  width: 100%;
+  text-align: right;
+
+}
+
+/*!********** Base styles **********!*/
+/*dropDownGrey: #e6e6e6;*/
+/*stopLoss: #ffe6e6;*/
+/*takeProfit: #e6e6e6;*/
+/*hrBlueLine: #41bee8;*/
+/*defaultBlue: #02a8e0  //buttons, post, underline execute, dropDownBlue*/
+/*greyDigits: #b3b3b3;*/
+/*blackDigits: #000000;*/
+
